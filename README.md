@@ -1,4 +1,3 @@
-tolong edit full saya tinggal copy
 <div align="center">
   <h1>👋 Hello, I'm Andika Andriansyah</h1>
   <p>
