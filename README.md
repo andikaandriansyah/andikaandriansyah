@@ -1,24 +1,71 @@
+<style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hover-img {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-img:hover {
+    transform: scale(1.05);
+  }
+
+  .badge-hover {
+    transition: transform 0.3s ease;
+  }
+
+  .badge-hover:hover {
+    transform: scale(1.1);
+  }
+
+  .contact-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+
+  .contact-button:hover {
+    background-color: #218838;
+  }
+</style>
+
 <div align="center">
-  <h1>👋 Hello, I'm Andika Andriansyah</h1>
-  <p>
-    <em>Full-stack Developer | Tech Enthusiast | Always Learning</em>
-  </p>
+  <div class="fade-in" style="animation-delay: 0.2s;">
+    <h1>👋 Hello, I'm Andika Andriansyah</h1>
+    <p><em>Full-stack Developer | Tech Enthusiast | Always Learning</em></p>
+  </div>
 
-  <!-- Foto Profil -->
-<img src="https://github.com/andikaandriansyah.png " width="150" alt="Foto Profil"/>
-
-  <!-- Atau pakai foto pribadi jika ada -->
-  <!-- <img src="https://github.com/andikaandriansyah.png " width="150" alt="Foto Profil"/> -->
-
+  <!-- Foto Profil dengan Efek Hover -->
+  <img src="https://github.com/andikaandriansyah.png " width="150" alt="Foto Profil" class="hover-img"/>
 </div>
 
 ---
 
-### 🔧 Teknologi Yang Saya Kuasai
+### 💼 Teknologi Yang Saya Kuasai
 
-![Languages](https://img.shields.io/badge/languages-Python%20JavaScript%20Java%20Node.js%20React%20PostgreSQL-blue?style=for-the-badge&logo=react)
+<!-- Badge dengan Efek Zoom -->
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+  <img src="https://img.shields.io/badge/languages-Python%20JavaScript%20Java%20Node.js%20React%20PostgreSQL-blue?style=for-the-badge&logo=react" 
+       alt="Languages" class="badge-hover"/>
 
-![Tools]( https://img.shields.io/badge/tools-Git%20GitHub%20VSCode-orange?style=for-the-badge&logo=git)
+  <img src=" https://img.shields.io/badge/tools-Git%20GitHub%20VSCode-orange?style=for-the-badge&logo=git" 
+       alt="Tools" class="badge-hover"/>
+</div>
 
 ---
 
@@ -27,11 +74,15 @@
 - 📘 LinkedIn: [linkedin.com/in/andikaandrians]( https://www.linkedin.com/in/andikaandrians )
 - 📧 Email: [andikaandriansyah01@gmail.com](mailto:andikaandriansyah01@gmail.com)
 
+<div align="center" style="margin-top: 1em;">
+  <a href="mailto:andikaandriansyah01@gmail.com" class="contact-button">📩 Hubungi Saya via Email</a>
+</div>
+
 ---
 
 ### 💼 Skill Utama
-### 💼 Skill Utama
 
+<!-- Grid 2 Kolom -->
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
   <div style="flex: 0 0 48%; margin-bottom: 1em;">
     <strong>🟢 Programming Languages:</strong>
@@ -73,14 +124,6 @@
     </ul>
   </div>
 </div>
-
-#### 🛠️ Tools & Technologies:
-- Git
-- Docker
-- Kubernetes
-- AWS
-- Azure
-- Linux
 
 ---
 
